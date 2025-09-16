@@ -1,0 +1,185 @@
+/* Navbar base */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.navbar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Brand */
+.navbar__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar__logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Toggle (hamburger) */
+.navbar__toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar__toggle-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* Menu */
+.navbar__menu {
+    position: fixed;
+    inset: 72px 0 0 0;
+    background: #FFFFFF;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+}
+
+.navbar__menu.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.navbar__item {}
+
+.navbar__link {
+    display: block;
+    /* padding: 8px 12px; */
+    color: #111111;
+    font-weight: 600;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+    font-size: 14px;
+}
+
+.navbar__link:hover {
+    color: #1aa584;
+}
+
+/* Actions (icons) */
+.navbar__actions {
+    display: none;
+}
+
+.navbar__action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right wrapper */
+.navbar__right {
+    display: none;
+}
+
+/* Desktop breakpoint */
+@media (min-width: 768px) {
+    .navbar__inner {
+        height: 84px;
+        padding: 0 20px;
+    }
+
+    .navbar__brand {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .navbar__toggle {
+        display: none;
+    }
+
+    .navbar__right {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .navbar__menu {
+        position: static;
+        inset: auto;
+        background: transparent;
+        opacity: 1;
+        pointer-events: auto;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 100%;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+        gap: 16px;
+        height: 100%;
+        align-items: center;
+    }
+
+    .navbar__link {
+        padding: 6px 8px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .navbar__actions {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar__inner {
+        background: #FFFFFF;
+    }
+
+    .navbar__logo {
+        height: 30px;
+        width: auto;
+        display: block;
+    }
+}

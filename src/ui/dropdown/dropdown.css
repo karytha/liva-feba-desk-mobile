@@ -1,0 +1,68 @@
+/* Container */
+.dd {
+    position: relative;
+    width: 100%;
+}
+
+/* Control */
+.dd__control {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 14px;
+    background: #FFFFFF;
+    color: #111111;
+    border: 1.5px solid #111111;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dd__control.is-success {
+    border-color: #111111;
+}
+
+.dd__value {
+    font-size: 14px;
+    color: #111111;
+}
+
+.dd__value.is-placeholder {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.dd__chevron {
+    flex: 0 0 auto;
+}
+
+/* List */
+.dd__list {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+    z-index: 10;
+}
+
+.dd__option {
+    list-style: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111111;
+    cursor: pointer;
+}
+
+.dd__option:hover {
+    background: #F1F1F1;
+}
+
+.dd__option.is-selected {
+    background: #111111;
+    color: #FFFFFF;
+}

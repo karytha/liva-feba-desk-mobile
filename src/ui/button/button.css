@@ -1,0 +1,54 @@
+/* Base button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.btn--primary {
+    background: #FFFFFF;
+    color: #111111;
+    border: 1.5px solid #111111;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn--primary:hover {
+    background: #111111;
+    color: #FFFFFF;
+    border-color: #111111;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Secondary */
+.btn--secondary {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #23B37A 0%, #12A26A 100%);
+    border: none;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.btn--secondary:hover {
+    background: linear-gradient(180deg, #4BC091 0%, #36B47F 100%);
+}
+
+.btn--secondary:active {
+    transform: translateY(1px);
+}
+
+/* Disabled */
+.btn:disabled,
+.btn[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
