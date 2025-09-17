@@ -26,6 +26,11 @@
     gap: 8px;
 }
 
+.navbar__social-media {
+    gap: 40px;
+    align-items: center;
+}
+
 .navbar__logo {
     height: 50px;
     width: auto;
@@ -93,7 +98,6 @@
     color: #1aa584;
 }
 
-/* Actions (icons) */
 .navbar__actions {
     display: none;
 }
@@ -102,15 +106,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
+    gap: 20px;
 }
 
-/* Right wrapper */
 .navbar__right {
     display: none;
 }
 
-/* Desktop breakpoint */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
+    .navbar__social-media {
+        display: flex;
+        flex-direction: row;
+    }
+
     .navbar__inner {
         height: 84px;
         padding: 0 20px;
@@ -147,9 +156,10 @@
 
     .navbar__list {
         flex-direction: row;
-        gap: 16px;
+        gap: 40px;
         height: 100%;
         align-items: center;
+
     }
 
     .navbar__link {
@@ -159,15 +169,31 @@
         height: 100%;
     }
 
-    .navbar__actions {
-        display: inline-flex;
+    /* .navbar__social-media {
+        gap: 40px;
         align-items: center;
-        gap: 12px;
-        height: 100%;
+    } */
+
+    .navbar__social-media.a {
+        gap: 20px;
+    }
+
+    .navbar__whatsapp {
+        display: flex;
+
+    }
+
+    .navbar__whatsapp-container {
+        background-color: transparent;
+
+    }
+
+    .navbar__netwoork_message {
+        display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .navbar {
         position: fixed;
         width: 100%;
@@ -177,9 +203,59 @@
         background: #FFFFFF;
     }
 
+    .navbar__whatsapp-container {
+        height: 15vh;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .navbar__social-media {
+        padding: 10px
+    }
+
+    .navbar__whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+
+    }
+
     .navbar__logo {
         height: 30px;
         width: auto;
         display: block;
+    }
+
+    .navbar__content.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar__menu {
+        padding: 20px;
+        padding-top: 40px;
+
+    }
+
+    .navbar__netwoork_message {
+        display: flex;
+        color: #111111;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .navbar__link {
+        margin-bottom: 32px;
+        font-size: 18px;
     }
 }

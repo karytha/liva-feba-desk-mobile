@@ -47,25 +47,33 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
-                    </ul>
 
+                    </ul>
+                    <div className="navbar__social-media">
+                        <p className='navbar__netwoork_message'> Acompanhe nas redes </p>
+                        <div aria-hidden={!isOpen && undefined} style={{ display: 'flex' }}>
+
+                            <a href="#" className="navbar__action" aria-label="Facebook">
+                                <Image src="/instagram.svg" alt="Instagram" width={25} height={25} />
+                            </a>
+                            <a href="#" className="navbar__action" aria-label="Instagram">
+                                <Image src="/facebook.svg" alt="Facebook" width={25} height={25} />
+
+                            </a>
+                        </div>
+                        <div className='navbar__whatsapp'>
+                            <div className='navbar__whatsapp-container'>
+
+                                <Button variant='secondary'>
+                                    <Image src="/whatsapp.svg" alt="WhatsApp" width={14} height={14} />
+                                    WHATSAPP
+                                </Button>
+                            </div>
+
+                        </div>
+                    </div>
                 </nav>
 
-                <div className="navbar__actions" aria-hidden={!isOpen && undefined}>
-                    <a href="#" className="navbar__action" aria-label="Facebook">
-                        <Image src="/instagram.svg" alt="Instagram" width={25} height={25} />
-                    </a>
-                    <a href="#" className="navbar__action" aria-label="Instagram">
-                        <Image src="/facebook.svg" alt="Facebook" width={25} height={25} />
-
-                    </a>
-                </div>
-                <div className="navbar__actions" aria-hidden={!isOpen && undefined}>
-                    <Button variant='secondary'>
-                        <Image src="/whatsapp.svg" alt="WhatsApp" width={14} height={14} />
-                        WHATSAPP
-                    </Button>
-                </div>
             </div>
         </header>
     );
