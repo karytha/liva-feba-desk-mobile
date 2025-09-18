@@ -2,7 +2,7 @@
 import React from 'react'
 import './contact.css'
 import Button from '../../ui/button/Button'
-import ContactMessageSucess from './ContactMessageSucess'
+import ContactMessageSucess from './contact-message-sucess'
 import useContactForm from './useContactForm'
 
 const consultorData = [
@@ -21,7 +21,7 @@ const Contact = () => {
     } = useContactForm()
 
     return (
-        <div className='contact'>
+        <div className='contact' id='contact_section'>
             <div className='contact__content'>
                 <div className='contact__info'>
                     <h2 className='contact__title'>Fale agora com um consultor de vendas</h2>

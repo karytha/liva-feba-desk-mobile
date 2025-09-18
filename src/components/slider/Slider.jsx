@@ -35,7 +35,7 @@ const Slider = () => {
     }, [slides.length])
 
     return (
-        <section className="slider" aria-roledescription="carousel">
+        <section id="slider" className="slider" aria-roledescription="carousel">
             {slides.map((slide, index) => (
                 <div
                     key={index}

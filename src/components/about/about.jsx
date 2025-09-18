@@ -5,7 +5,7 @@ import Button from '@/ui/button/Button';
 
 const About = () => {
     return (
-        <div className='about'>
+        <div id='about' className='about'>
             <div className='about__image' >
                 <Image src='/image-father-son.svg' alt='About' width={472} height={472} />
             </div>

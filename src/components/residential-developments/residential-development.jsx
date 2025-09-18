@@ -53,7 +53,7 @@ const ResidentialDevelopment = () => {
     }
 
     return (
-        <div className='residential-development'>
+        <div id='residential' className='residential-development'>
             <div className='residential-development__header'>
                 <h2 className='residential-development__title'>Confira todos os <p>empreendimentos da Liva</p></h2>
                 <div className='residential-development__filter'>

@@ -6,11 +6,11 @@ import Button from '@/ui/button/Button';
 import Image from 'next/image';
 
 const NavBarLinks = [
-    { name: 'HOME', link: '' },
-    { name: 'SOBRE A LIVA', link: '' },
-    { name: 'EMPREENDIMENTOS', link: '' },
-    { name: 'NOTÍCIAS', link: '' },
-    { name: 'CONTATO', link: '' },
+    { name: 'HOME', link: '#slider' },
+    { name: 'SOBRE A LIVA', link: '#about' },
+    { name: 'EMPREENDIMENTOS', link: '#residential' },
+    { name: 'NOTÍCIAS', link: '#' },
+    { name: 'CONTATO', link: '#contact_section' },
 ]
 
 const Navbar = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <header className="navbar">
             <div className="navbar__inner">
-                <a href="/" className="navbar__brand" onClick={closeMenu}>
+                <a href="#slider" className="navbar__brand" onClick={closeMenu}>
                     <Image src="/liva.svg" alt="Liva" className="navbar__logo" width={30} height={30} />
                 </a>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <ul className="navbar__list">
                         {NavBarLinks.map((item) => (
                             <li key={item.name} className="navbar__item">
-                                <a href={item.link || '#'} className="navbar__link" onClick={closeMenu}>
+                                <a href={item.link} className="navbar__link" onClick={closeMenu}>
                                     {item.name}
                                 </a>
                             </li>
@@ -69,7 +69,7 @@ const Navbar = () => {
                                 </Button>
                             </div>
 
-                        </div>zz
+                        </div>
                     </div>
                 </nav>
 

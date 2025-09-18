@@ -15,11 +15,11 @@ const Footer = () => {
                 <div className='footer__col footer__links'>
                     <span className='footer__heading'>NAVEGUE NO SITE</span>
                     <ul className='footer__nav'>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOBRE A LIVA</a></li>
-                        <li><a href="#">EMPREENDIMENTOS</a></li>
-                        <li><a href="#">NOTÍCIAS</a></li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#slider">HOME</a></li>
+                        <li><a href="#about">SOBRE A LIVA</a></li>
+                        <li><a href="#residential">EMPREENDIMENTOS</a></li>
+                        <li><a href="#news">NOTÍCIAS</a></li>
+                        <li><a href="#contact_section">CONTATO</a></li>
                     </ul>
 
                 </div>
