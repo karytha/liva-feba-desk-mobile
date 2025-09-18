@@ -10,6 +10,7 @@ import slide3 from '@/assets/barra-view-3.svg'
 import Button from '@/ui/button/Button'
 
 const Slider = () => {
+
     const slides = useMemo(() => ([
         { src: slide1, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
         { src: slide2, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
