@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Button from '@/ui/button/Button'
 import './footer.css'
+import { NavBarLinks } from '@/constants/links';
 
 const Footer = () => {
     return (
@@ -15,13 +16,14 @@ const Footer = () => {
                 <div className='footer__col footer__links'>
                     <span className='footer__heading'>NAVEGUE NO SITE</span>
                     <ul className='footer__nav'>
-                        <li><a href="#slider">HOME</a></li>
-                        <li><a href="#about">SOBRE A LIVA</a></li>
-                        <li><a href="#residential">EMPREENDIMENTOS</a></li>
-                        <li><a href="#news">NOTÍCIAS</a></li>
-                        <li><a href="#contact_section">CONTATO</a></li>
+                        {NavBarLinks.map((item) => (
+                            <li key={item.name} >
+                                <a href={item.link}>
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
-
                 </div>
                 <div className='footer__col footer__social'>
                     <span>Acompanhe nas redes</span>

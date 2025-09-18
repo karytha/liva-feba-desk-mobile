@@ -4,14 +4,7 @@ import { useState } from 'react'
 import './navbar.css'
 import Button from '@/ui/button/Button';
 import Image from 'next/image';
-
-const NavBarLinks = [
-    { name: 'HOME', link: '#slider' },
-    { name: 'SOBRE A LIVA', link: '#about' },
-    { name: 'EMPREENDIMENTOS', link: '#residential' },
-    { name: 'NOTÍCIAS', link: '#' },
-    { name: 'CONTATO', link: '#contact_section' },
-]
+import { NavBarLinks } from '@/constants/links';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
