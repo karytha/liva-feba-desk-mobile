@@ -23,7 +23,7 @@
     justify-content: space-between;
     background-color: #03110D;
     max-width: 80vw;
-    gap: 80px;
+
 }
 
 .contact__info {
@@ -161,6 +161,10 @@
 
 .form__submit {
     margin-top: 8px;
+}
+
+.contact__content {
+    gap: 20px;
 }
 
 

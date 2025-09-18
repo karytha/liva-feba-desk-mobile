@@ -15,7 +15,6 @@ export const developments = [
         city: 'Rio de Janeiro',
         Bairro: 'Copacabana',
         image: 'src/assets/blue-coast-tower.svg',
-        badge: 'PRÉ LANÇAMENTO',
         features: [
             'Apartamento com 3 dormitórios sendo 1 suíte',
             'Condomínio Fechado',
@@ -26,7 +25,6 @@ export const developments = [
         city: 'São Paulo',
         Bairro: 'Itaim Bibi',
         image: 'src/assets/grand-place-tower-2.svg',
-        badge: 'PRÉ LANÇAMENTO',
         features: [
             'Apartamento com 3 dormitórios sendo 1 suíte',
             'Condomínio Fechado',
@@ -37,7 +35,6 @@ export const developments = [
         city: 'São Paulo',
         Bairro: 'Jardins',
         image: 'src/assets/grand-place-tower.svg',
-        badge: 'PRÉ LANÇAMENTO',
         features: [
             'Apartamento com 3 dormitórios sendo 1 suíte',
             'Condomínio Fechado',
@@ -48,7 +45,6 @@ export const developments = [
         city: 'Rio de Janeiro',
         Bairro: 'Barra da Tijuca',
         image: 'src/assets/imperium-tower.svg',
-        badge: 'PRÉ LANÇAMENTO',
         features: [
             'Apartamento com 3 dormitórios sendo 1 suíte',
             'Condomínio Fechado',
@@ -59,7 +55,6 @@ export const developments = [
         city: 'Rio de Janeiro',
         Bairro: 'Ipanema',
         image: 'src/assets/infinity-coast.svg',
-        badge: 'PRÉ LANÇAMENTO',
         features: [
             'Apartamento com 3 dormitórios sendo 1 suíte',
             'Condomínio Fechado',

@@ -201,6 +201,36 @@
         width: 100%;
     }
 
+    /* Mobile filters layout */
+    .residential-development__filter-mobile {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .residential-development__filter-mobile .dd__control {
+        width: 100%;
+        border-radius: 8px;
+        padding: 16px 18px;
+        border: 2px solid #111111;
+        background: #FFFFFF;
+    }
+
+    .residential-development__filter-mobile .dd__control[aria-expanded="true"],
+    .residential-development__filter-mobile .dd__control.is-success {
+        border-color: #1aa584;
+        box-shadow: 0 0 0 2px rgba(26, 165, 132, 0.15);
+    }
+
+    .residential-development__filter-mobile .dd__value {
+        font-size: 16px;
+    }
+
+    .residential-development__filter-mobile .dd__list {
+        max-height: 240px;
+        overflow: auto;
+    }
+
     .residential-development__content {
         grid-template-columns: 1fr;
     }
@@ -211,5 +241,21 @@
         min-height: 300px;
     }
 
+
+}
+
+@media screen and (max-width: 768px) {
+    .rd-card__overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 5px;
+        padding: 10px;
+        color: #FFFFFF;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%);
+        transition: background 200ms ease;
+    }
 
 }

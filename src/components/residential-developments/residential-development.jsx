@@ -84,15 +84,15 @@ const ResidentialDevelopment = () => {
                                     <span className='rd-card__meta-value'>{dev.Bairro}</span>
                                 </div>
                             </div>
-                            {dev.badge && (
+                            {dev.features && (
                                 <ul className='rd-card__features'>
                                     <li className='rd-feature'>
                                         <IconBed />
-                                        <span>Apartamento com 3 dormitórios sendo 1 suíte</span>
+                                        <span>{dev?.features[0]}</span>
                                     </li>
                                     <li className='rd-feature'>
                                         <IconCondo />
-                                        <span>Condomínio Fechado</span>
+                                        <span>{dev?.features[1]}</span>
                                     </li>
                                 </ul>
                             )}
