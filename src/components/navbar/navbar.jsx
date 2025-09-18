@@ -23,7 +23,6 @@ const Navbar = () => {
         <header className="navbar">
             <div className="navbar__inner">
                 <a href="/" className="navbar__brand" onClick={closeMenu}>
-                    {/* TODO Diminuir o tamanho da logo e o tamanho do botao quando estiver no mobile */}
                     <Image src="/liva.svg" alt="Liva" className="navbar__logo" width={30} height={30} />
                 </a>
 
@@ -70,7 +69,7 @@ const Navbar = () => {
                                 </Button>
                             </div>
 
-                        </div>
+                        </div>zz
                     </div>
                 </nav>
 

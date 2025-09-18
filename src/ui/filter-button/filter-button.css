@@ -1,0 +1,44 @@
+/* Base button */
+.filter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    border: 2px solid #ffffff;
+}
+
+.filter-btn__icon {
+    display: inline-block;
+}
+
+.filter-btn__label {
+    font-family: inherit;
+}
+
+/* Active state (close) */
+.filter-btn.is-active {
+    background: #ffffff;
+    color: #000000;
+    border-color: #010000;
+    border: 2px solid
+}
+
+/* Hover states */
+.filter-btn:hover {
+    box-shadow: 0 4px 10px #ffffff;
+}
+
+.filter-btn.is-active:hover {
+    background: #ffffff;
+}

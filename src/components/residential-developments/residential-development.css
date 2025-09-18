@@ -1,0 +1,215 @@
+.residential-development {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+
+}
+
+.residential-development__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.residential-development__title {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    color: #03110D;
+}
+
+.residential-development__filter {
+    width: 10%;
+}
+
+.residential-development__filter-mobile.is-closed {
+    display: none;
+}
+
+.residential-development__title p {
+    font-size: 48px;
+    font-weight: 600;
+    color: #1aa584;
+}
+
+.residential-development__filter-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Grid */
+.residential-development__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.rd-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+
+.rd-card--feature {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: auto;
+    min-height: 336px;
+}
+
+.rd-card__img {
+    object-fit: cover;
+    transition: transform 280ms ease;
+}
+
+.rd-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 18px;
+    padding: 40px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65) 100%);
+    transition: background 200ms ease;
+}
+
+.rd-card__badge {
+    align-self: flex-start;
+    background: #FFFFFF;
+    color: #111111;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 140;
+    height: 42;
+    opacity: 1;
+    top: 323px;
+    left: 43px;
+    border-radius: 4px;
+    padding: 14px;
+    gap: 8px;
+
+}
+
+.rd-card__title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.rd-card__meta {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.rd-card__meta-label {
+    opacity: 0.8;
+    display: block;
+}
+
+.rd-card__meta-value {
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+}
+
+.rd-card__features {
+    margin-top: 8px;
+    display: grid;
+    gap: 10px;
+    font-size: 14px;
+    list-style: none;
+
+    /* hidden by default, shown on hover */
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.rd-feature {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: center;
+    gap: 12px;
+    color: #FFFFFF;
+}
+
+.rd-feature__icon {
+    color: #63D0B3;
+}
+
+/* Hover formatting for all cards */
+.rd-card:hover .rd-card__img {
+    transform: scale(1.03);
+}
+
+.rd-card:hover .rd-card__overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.rd-card:hover .rd-card__meta,
+.rd-card:hover .rd-card__features {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.residential-development__load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .residential-development {
+        padding: 30px
+    }
+
+    .residential-development__title {
+        font-size: 32px;
+    }
+
+    .residential-development__title p {
+        font-size: 32px;
+    }
+
+    .residential-development__header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .residential-development__filter {
+        width: 100%;
+    }
+
+    .residential-development__content {
+        grid-template-columns: 1fr;
+    }
+
+    .rd-card--feature {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 300px;
+    }
+
+
+}

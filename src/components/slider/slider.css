@@ -125,3 +125,23 @@
 .slider__dot.is-active {
     background: #fff;
 }
+
+
+@media (max-width: 1000px) {
+
+    .slider__title {
+        font-size: 32px;
+    }
+
+    .slider__subtitle {
+        margin-bottom: 35px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+
+
+}

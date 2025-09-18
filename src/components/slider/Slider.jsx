@@ -7,12 +7,13 @@ import './slider.css'
 import slide1 from '@/assets/barra-view-1.svg'
 import slide2 from '@/assets/barra-view-2.svg'
 import slide3 from '@/assets/barra-view-3.svg'
+import Button from '@/ui/button/Button'
 
 const Slider = () => {
     const slides = useMemo(() => ([
         { src: slide1, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
-        // { src: slide2, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
-        // { src: slide3, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
+        { src: slide2, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
+        { src: slide3, title: 'Barra View', badge: 'PRÉ LANÇAMENTO', subtitle: 'Apartamento com 3 dormitórios sendo 1 suíte', ctaLabel: 'SAIBA MAIS', href: '#' },
     ]), [])
 
     const [current, setCurrent] = useState(0)
@@ -56,7 +57,7 @@ const Slider = () => {
                         <span className="slider__badge">{slide.badge}</span>
                         <h1 className="slider__title">{slide.title}</h1>
                         <span className="slider__subtitle">{slide.subtitle}</span>
-                        <a className="slider__cta" href={slide.href}>{slide.ctaLabel}</a>
+                        <Button variant="tertiary" href={slide.href}>{slide.ctaLabel}</Button>
                     </div>
                 </div>
             ))}

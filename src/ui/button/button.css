@@ -29,10 +29,30 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
+.btn--tertiary {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 48%;
+}
+
+.btn--tertiary:hover {
+    background: #FFFFFF;
+    color: #111111;
+    border-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
 /* Secondary */
 .btn--secondary {
     color: #FFFFFF;
-    background: linear-gradient(180deg, #23B37A 0%, #12A26A 100%);
+    background: #1aa584;
+    width: 100%;
     border: none;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
 }

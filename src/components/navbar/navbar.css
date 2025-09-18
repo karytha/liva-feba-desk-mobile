@@ -204,8 +204,9 @@
     }
 
     .navbar__whatsapp-container {
-        height: 15vh;
+        height: 5vh;
         width: 100%;
+        padding: 20px;
         align-items: center;
         display: flex;
         justify-content: center;
