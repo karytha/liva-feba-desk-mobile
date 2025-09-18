@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liva FEBA Desk Mobile
 
-## Getting Started
+Projeto Next.js (App Router) da Liva. Este README explica como rodar o projeto localmente.
 
-First, run the development server:
+## Requisitos
+- Node.js 18+ (recomendado LTS)
+- npm 9+ (ou yarn/pnpm, se preferir)
 
+## Instalação
+1. Instale as dependências:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+# ou: yarn
+yarn
+# ou: pnpm
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Rodando em desenvolvimento
+```bash
+npm run dev
+```
+- Acesse `http://localhost:3000` no navegador.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Build de produção
+```bash
+npm run build
+npm start
+```
+- O build gerará os arquivos otimizados e `npm start` iniciará o servidor em produção.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts úteis
+- `dev`: inicia o servidor de desenvolvimento
+- `build`: cria o build de produção
+- `start`: inicia o servidor com o build de produção
+- `lint`: executa o linter
 
-## Learn More
+## Estrutura relevante
+- `src/app/`: rotas e layouts do App Router
+- `src/components/`: componentes de UI
+- `src/ui/`: componentes reutilizáveis (botões, dropdown, etc.)
+- `public/`: arquivos estáticos (imagens, ícones, fontes)
 
-To learn more about Next.js, take a look at the following resources:
+## Observações
+- As fontes Urbane estão configuradas em `src/app/globals.css`.
+- Ícones e imagens adicionais ficam em `public/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Troubleshooting
+- Versão do Node: verifique com `node -v` (use 18+). Se necessário, use `nvm` para alternar.
+- Portas ocupadas: ajuste a porta com `PORT=3001 npm run dev`.
+- Dependências quebradas: `rm -rf node_modules package-lock.json && npm install`.
