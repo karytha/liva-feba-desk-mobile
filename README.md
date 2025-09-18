@@ -10,10 +10,6 @@ Projeto Next.js (App Router) da Liva. Este README explica como rodar o projeto l
 1. Instale as dependências:
 ```bash
 npm install
-# ou: yarn
-yarn
-# ou: pnpm
-pnpm install
 ```
 
 ## Rodando em desenvolvimento
